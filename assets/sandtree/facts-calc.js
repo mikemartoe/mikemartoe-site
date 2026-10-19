@@ -38,7 +38,7 @@
   };
   if (!el.price) return;
 
-  var state = { price: 349900, pct: 20, rate: 6.5, years: 30, tax: 2798, hoa: 85, ins: 150 };
+  var state = { price: 349900, pct: 20, rate: 6.5, years: 30, tax: 2798, hoa: 128, ins: 150 };
   var rateTouched = false;
 
   function num(v) { var n = parseFloat(String(v).replace(/[^0-9.]/g, '')); return isFinite(n) ? n : 0; }
