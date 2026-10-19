@@ -30,6 +30,7 @@
     "saves_favorites": 18,
     "note": "Sum of non-null source values only. The page computes its own total from sources and adds site visits when > 0; this field is for reference."
   },
+  "social_audience": {"total": 681140, "display": "681K", "groups": 30, "updated": "2026-10-19T17:30-04:00", "source": "Facebook group member counts", "note": "Combined member counts of the 30 Facebook groups where Mike posted Sandtree; most counts are rounded by Facebook."},
   "site_counter_url": "https://abacus.jasoncameron.dev/get/mikemartoe-com/sandtree-page-views",
   "site_visits_at_update": 0,
   "no_counts": {
