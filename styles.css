@@ -348,3 +348,6 @@ img{height:auto}
 /* more space below About card */
 .fc-about{margin:0 0 48px}
 @media(max-width:600px){.fc-about{margin:0 0 32px}}
+/* home: pull intro paragraph up under the hero */
+.hero{padding-bottom:28px}
+.intro{padding-top:0}.intro .lead-p{margin-top:0}
