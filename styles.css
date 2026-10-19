@@ -485,3 +485,11 @@ img{height:auto}
 .showreq-agent input{width:auto;margin:0;accent-color:var(--red)}
 .showreq-panel .btn{width:100%;text-align:center}
 @media(max-width:600px){.showreq-agent legend{float:none;width:100%;margin:0 0 2px}.showreq-panel{padding:16px 14px 18px}.showreq-panel .row.two{grid-template-columns:1fr}.showreq-bar{gap:8px 14px}}
+/* sandtree: centered event bars, balanced gaps (hero->bars = bars->title) */
+#sandtree .oh-banner,#sandtree .bo-banner{text-align:center}
+#sandtree.sec{padding-top:28px}
+#sandtree .oh-banner ~ .bo-banner{margin-bottom:28px}
+@media(max-width:600px){#sandtree.sec{padding-top:24px}#sandtree .oh-banner ~ .bo-banner{margin-bottom:24px}}
+#sandtree .bo-banner{padding-right:20px}
+@media(max-width:600px){#sandtree .bo-banner{padding-right:16px}}
+@media(max-width:600px){#sandtree .shead-split{margin-bottom:24px}}
