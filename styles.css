@@ -409,3 +409,12 @@ img{height:auto}
 @media(max-width:600px){.hero-furnished{right:12px}.gitem .vs-tag{font-size:.56rem;padding:4px 6px}}
 .ba-lbl,.ba-lbl-after{transition:opacity .2s}
 .ba.ba-lo .ba-lbl-before,.ba.ba-hi .ba-lbl-after{opacity:0}
+
+/* top bar: contact links flush left; LPT office line moved to footer */
+.topbar .wrap{justify-content:flex-start}
+.topbar .wrap>span.tb-contact{display:inline!important;font-size:.8rem}
+.copy{text-align:center}
+.copy p{margin:0}
+.copy .copy-office{margin-top:8px;color:#bbb}
+.copy .copy-office a{white-space:nowrap}
+@media(max-width:600px){.topbar .wrap>span.tb-contact{font-size:.76rem}.copy{line-height:1.6}}
