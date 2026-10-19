@@ -344,3 +344,7 @@ img{height:auto}
 .about-text{font-family:'Lora',Georgia,'Times New Roman',serif;font-size:18px;line-height:1.7;color:#3a2f2a}
 @media(max-width:600px){.about-text{font-size:17px}}
 .oh-banner ~ .bo-banner{margin-bottom:18px}
+
+/* more space below About card */
+.fc-about{margin:0 0 48px}
+@media(max-width:600px){.fc-about{margin:0 0 32px}}
