@@ -75,6 +75,15 @@ img{height:auto}
 .at-toggle:focus-visible{outline:2px solid var(--red);outline-offset:2px}
 .at-toggle .at-ic-play,.activity-ticker.is-paused .at-ic-pause{display:none}
 .activity-ticker.is-paused .at-ic-play{display:block}
+.at-stats{display:flex;flex-wrap:wrap;align-items:center;gap:4px 18px;margin:2px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.at-stats[hidden]{display:none}
+.at-stat{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.at-stat .at-ic{display:inline-flex;align-items:center;gap:1px;fill:var(--red)}
+.at-stat .at-ic svg{display:block}
+.at-stat strong{font-size:1.45rem;font-weight:800;line-height:1;color:var(--red);font-variant-numeric:tabular-nums}
+.at-stat .at-cap{font-size:.86rem;font-weight:700;color:var(--ink)}
+.at-label .at-asof{margin-left:6px;text-transform:none;letter-spacing:0;font-size:.74rem;font-weight:500;color:var(--mut)}
+.at-window[hidden]{display:none}
 .at-window{display:grid;overflow:hidden}
 .at-item{grid-area:1/1;align-self:center;font-size:.86rem;font-weight:600;color:var(--ink);opacity:0;transform:translateY(60%);transition:opacity .5s ease,transform .5s ease;visibility:hidden}
 .at-item.is-on{opacity:1;transform:none;visibility:visible}

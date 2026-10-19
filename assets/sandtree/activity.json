@@ -1,16 +1,84 @@
 {
   "listing": "901 Sandtree Drive, Palm Beach Gardens",
-  "updated": "2026-10-19T17:15:00-04:00",
-  "zillow_views": 81,
-  "zillow_saves": 15,
-  "redfin_views": 13,
-  "redfin_favorites": 3,
-  "site_counter_url": "https://abacus.jasoncameron.dev/get/mikemartoe-com/sandtree-page-views",
+  "updated": "2026-10-19T17:23:00-04:00",
   "sources": {
-    "zillow": "https://www.zillow.com/homedetails/901-Sandtree-Dr-Palm-Beach-Gardens-FL-33403/46866582_zpid/",
-    "redfin": "https://www.redfin.com/FL/Palm-Beach-Gardens/901-Sandtree-Dr-33403/home/42452854",
-    "checked": "2026-10-19T17:15:00-04:00",
-    "method": "Mike's phone screenshots of Zillow and Redfin listing pages"
+    "zillow": {
+      "views": 81,
+      "saves": 15,
+      "as_of": "2026-10-19T17:15:00-04:00",
+      "url": "https://www.zillow.com/homedetails/901-Sandtree-Dr-Palm-Beach-Gardens-FL-33403/46866582_zpid/",
+      "method": "WebFetch of the listing URL returns '79 views / 15 saves' block; curl and headless Chrome get PerimeterX 403. Current values from Mike's phone screenshot 17:15 EDT."
+    },
+    "redfin": {
+      "views": 15,
+      "saves": 3,
+      "as_of": "2026-10-19T17:21:00-04:00",
+      "label": "favorites",
+      "url": "https://www.redfin.com/FL/Palm-Beach-Gardens/901-Sandtree-Dr-33403/home/42452854",
+      "method": "Headless Chrome (playwright, desktop Chrome UA); body text 'N views \u2022 M favorites'. Plain curl gets CloudFront 403."
+    },
+    "homes_com": {
+      "views": 15,
+      "saves": null,
+      "as_of": "2026-10-19T17:23:00-04:00",
+      "url": "https://www.homes.com/property/901-sandtree-dr-palm-beach-gardens-fl/qmccl619jnpqv/",
+      "method": "WebFetch of the listing URL shows 'Total Views N' (no saves count shown). Headless Chrome gets Access Denied. Homesnap URL redirects here, so do not count Homesnap separately."
+    }
+  },
+  "totals": {
+    "views": 111,
+    "saves_favorites": 18,
+    "note": "Sum of non-null source values only. The page computes its own total from sources and adds site visits when > 0; this field is for reference."
+  },
+  "site_counter_url": "https://abacus.jasoncameron.dev/get/mikemartoe-com/sandtree-page-views",
+  "site_visits_at_update": 0,
+  "no_counts": {
+    "realtor_com": {
+      "url": "https://www.realtor.com/realestateandhomes-detail/M6956064380",
+      "result": "Loads in headless Chrome; no view/save counts shown. ID from https://parser-external.geo.moveaws.com/suggest?input=901%20Sandtree%20Dr%2C%20Palm%20Beach%20Gardens%2C%20FL&client_id=rdc-home"
+    },
+    "movoto": {
+      "url": "https://www.movoto.com/west-palm-beach-fl/901-sandtree-dr-west-palm-beach-fl-33403/pid_xil9mo88ah/",
+      "result": "WebFetch works; no counts shown. Headless Chrome 403."
+    },
+    "trulia": {
+      "url": "https://www.trulia.com/home/901-sandtree-dr-palm-beach-gardens-fl-33403-46866582",
+      "result": "Blocked (403) for curl, WebFetch and headless Chrome. Same Zillow Group data; don't add separately."
+    },
+    "raveis": {
+      "url": "https://www.raveis.com/prop/B26089813/901-sandtree-drive-palm-beach-gardens-fl-33403",
+      "result": "Loads; no counts."
+    },
+    "bexrealty": {
+      "url": "https://www.bexrealty.com/FL/Palm-Beach-Gardens/901-sandtree-drive/townhouse/B26089813",
+      "result": "Loads; no counts."
+    },
+    "discoversouthflorida": {
+      "url": "https://www.discoversouthflorida.com/listing/b26089813-901-sandtree-drive-palm-beach-gardens-fl-33403",
+      "result": "Loads; no counts."
+    },
+    "propertypanorama": {
+      "url": "https://www.propertypanorama.com/901-Sandtree-Drive-Palm-Beach-Gardens-FL-33403/unbranded",
+      "result": "Virtual tour; no counts."
+    },
+    "compass": {
+      "result": "No listing page found (guessed URL 410)."
+    },
+    "coldwellbanker": {
+      "result": "Search URL returned 500; no listing page found."
+    },
+    "century21": {
+      "result": "No listing page found (404)."
+    },
+    "estately": {
+      "result": "No listing page found (404; search redirects to map)."
+    },
+    "lpt_com": {
+      "result": "lpt.com is a recruiting site, no public listing search found."
+    },
+    "beaches_mls_public": {
+      "result": "No public consumer portal with counts; agent-facing MLS stats require login (not checked)."
+    }
   },
   "note": null,
   "items": [
