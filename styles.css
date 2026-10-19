@@ -98,13 +98,24 @@ img{height:auto}
 .activity-ticker.is-static .at-window{display:block}
 .activity-ticker.is-static .at-item{display:block;opacity:1;transform:none;visibility:visible;transition:none;font-size:.78rem;padding:1px 0}
 @media(prefers-reduced-motion:reduce){.at-item{transition:none}}
-/* desktop: stretch title block to match Listing Activity box height (top + bottom edges) */
+/* desktop: title block fills the Listing Activity box height (top + bottom edges) */
+.shead-specs .spec-price{color:var(--red);font-weight:700}
 @media(min-width:701px){
   .shead-split{align-items:stretch}
-  .shead-split .activity-ticker{align-self:flex-start}
-  .shead-split .shead-main{display:flex;flex-direction:column;justify-content:space-between;gap:8px}
-  .shead-split .shead-main h2{margin-top:0}
+  .shead-split .shead-main{container-type:inline-size;display:flex;flex-direction:column;justify-content:space-between;gap:6px}
+  .shead-split .shead-main h2{margin:0;font-size:clamp(1.9rem,8.6cqi,2.75rem);line-height:1.04;letter-spacing:-.02em}
+  .shead-split .shead-main .h2-city{display:block}
+  .shead-split .shead-main .shead-specs{font-size:clamp(1.05rem,3.2cqi,1.3rem);line-height:1.35;color:var(--ink)}
   .shead-split .shead-main .showreq{margin-top:0}
+  .shead-split .showreq-btn{padding:11px 24px;font-size:1.05rem;gap:10px}
+  .shead-split .showreq-btn .sr-cal{width:20px;height:20px}
+  .shead-split .showreq-agents{font-size:.98rem}
+  .shead-split .showreq-bar{gap:8px 20px}
+}
+@media(max-width:700px){
+  .shead-split .shead-main .shead-specs{font-size:1.06rem}
+  .shead-split .showreq-btn{padding:10px 20px;font-size:.98rem}
+  .shead-split .showreq-agents{font-size:.9rem}
 }
 @media(max-width:700px){
   .shead-split{flex-direction:column;align-items:stretch}
