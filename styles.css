@@ -98,6 +98,14 @@ img{height:auto}
 .activity-ticker.is-static .at-window{display:block}
 .activity-ticker.is-static .at-item{display:block;opacity:1;transform:none;visibility:visible;transition:none;font-size:.78rem;padding:1px 0}
 @media(prefers-reduced-motion:reduce){.at-item{transition:none}}
+/* desktop: stretch title block to match Listing Activity box height (top + bottom edges) */
+@media(min-width:701px){
+  .shead-split{align-items:stretch}
+  .shead-split .activity-ticker{align-self:flex-start}
+  .shead-split .shead-main{display:flex;flex-direction:column;justify-content:space-between;gap:8px}
+  .shead-split .shead-main h2{margin-top:0}
+  .shead-split .shead-main .showreq{margin-top:0}
+}
 @media(max-width:700px){
   .shead-split{flex-direction:column;align-items:stretch}
   .activity-ticker{width:100%}
