@@ -351,3 +351,4 @@ img{height:auto}
 /* home: pull intro paragraph up under the hero */
 .hero{padding-bottom:28px}
 .intro{padding-top:0}.intro .lead-p{margin-top:0}
+.intro .lead-p{max-width:none}
