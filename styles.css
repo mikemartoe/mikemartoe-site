@@ -203,7 +203,7 @@ img{height:auto}
 .facts-wrap{margin-top:40px}
 .facts-calc{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(320px,1fr);grid-template-areas:"head calc" "tabs calc";grid-template-rows:auto 1fr;column-gap:32px;row-gap:22px;align-items:start}
 .fc-head{grid-area:head}.fc-tabs{grid-area:tabs}.calc-card{grid-area:calc}
-.fc-about{margin-top:40px}
+.fc-about{margin:0 0 24px}
 .fc-head .eyebrow{margin:0 0 4px}.fc-title{margin:0 0 16px}
 .fic{width:20px;height:20px;flex:0 0 auto;display:block}
 .stat-chips{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}
@@ -340,6 +340,7 @@ img{height:auto}
   .about-text{columns:2;column-gap:44px;margin-bottom:18px}
   .about-listed,.about-disc{max-width:none}
 }
-@media(max-width:960px){.fc-about{margin-top:28px}}
+
 .about-text{font-family:'Lora',Georgia,'Times New Roman',serif;font-size:18px;line-height:1.7;color:#3a2f2a}
 @media(max-width:600px){.about-text{font-size:17px}}
+.oh-banner ~ .bo-banner{margin-bottom:18px}
