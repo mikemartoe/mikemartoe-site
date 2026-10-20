@@ -1,18 +1,18 @@
 {
   "listing": "901 Sandtree Drive, Palm Beach Gardens",
-  "updated": "2026-10-20T08:12:00-04:00",
+  "updated": "2026-10-20T11:08:00-04:00",
   "sources": {
     "zillow": {
-      "views": 118,
-      "saves": 17,
-      "as_of": "2026-10-20T08:12:00-04:00",
+      "views": 124,
+      "saves": 20,
+      "as_of": "2026-10-20T11:08:00-04:00",
       "url": "https://www.zillow.com/homedetails/901-Sandtree-Dr-Palm-Beach-Gardens-FL-33403/46866582_zpid/",
       "method": "WebFetch of the listing URL returns 'N views / M saves' block; curl and headless Chrome get PerimeterX 403."
     },
     "redfin": {
-      "views": 20,
+      "views": 22,
       "saves": 3,
-      "as_of": "2026-10-20T08:12:00-04:00",
+      "as_of": "2026-10-20T11:08:00-04:00",
       "label": "favorites",
       "url": "https://www.redfin.com/FL/Palm-Beach-Gardens/901-Sandtree-Dr-33403/home/42452854",
       "method": "Headless Chrome (playwright, desktop Chrome UA); body text 'N views • M favorites'. Plain curl gets CloudFront 403."
@@ -20,14 +20,14 @@
     "homes_com": {
       "views": 15,
       "saves": null,
-      "as_of": "2026-10-20T08:12:00-04:00",
+      "as_of": "2026-10-20T11:08:00-04:00",
       "url": "https://www.homes.com/property/901-sandtree-dr-palm-beach-gardens-fl/qmccl619jnpqv/",
       "method": "WebFetch of the listing URL shows 'Total Views N' (no saves count shown). Headless Chrome gets Access Denied. Homesnap URL redirects here, so do not count Homesnap separately."
     }
   },
   "totals": {
-    "views": 153,
-    "saves_favorites": 20,
+    "views": 161,
+    "saves_favorites": 23,
     "note": "Sum of non-null source values only. The page computes its own total from sources and adds site visits when > 0; this field is for reference."
   },
   "social_audience": {
@@ -39,7 +39,7 @@
     "note": "Combined member counts of the 30 Facebook groups where Mike posted Sandtree; most counts are rounded by Facebook."
   },
   "site_counter_url": "https://abacus.jasoncameron.dev/get/mikemartoe-com/sandtree-page-views",
-  "site_visits_at_update": 14,
+  "site_visits_at_update": 15,
   "no_counts": {
     "realtor_com": {
       "url": "https://www.realtor.com/realestateandhomes-detail/M6956064380",
