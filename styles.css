@@ -493,3 +493,10 @@ img{height:auto}
 #sandtree .bo-banner{padding-left:16px;padding-right:16px}
 @media(max-width:600px){#sandtree .bo-banner{padding-left:10px;padding-right:12px}}
 @media(max-width:600px){#sandtree .shead-split{margin-bottom:24px}}
+/* sandtree: staged thumbnails load into the before/after slider in place */
+.ba{scroll-margin-top:90px}
+.gallery .gitem.vs-item{cursor:pointer}
+.gallery .gitem.vs-item::after{content:"";position:absolute;inset:0;z-index:3;border:2px solid transparent;border-radius:inherit;pointer-events:none;transition:border-color .2s}
+.gallery .gitem.vs-item.is-active::after,.gallery .gitem.vs-item[aria-pressed="true"]::after{border-color:var(--red)}
+.gallery .gitem.vs-item.is-active img{transform:none}
+@media(max-width:600px){.ba{scroll-margin-top:89px}}
