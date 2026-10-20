@@ -1,28 +1,28 @@
 {
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "note": null,
   "source": "Mortgage News Daily",
   "source_url": "https://www.mortgagenewsdaily.com/mortgage-rates",
   "items": [
     {
       "label": "30YR Fixed",
-      "value": "7.43%",
-      "change": "+0.06%"
+      "value": "7.40%",
+      "change": "-0.03%"
     },
     {
       "label": "15YR Fixed",
-      "value": "7.07%",
-      "change": "+0.03%"
+      "value": "7.05%",
+      "change": "-0.02%"
     },
     {
       "label": "UMBS 30YR 6.0",
-      "value": "98.70",
-      "change": "-0.25"
+      "value": "98.84",
+      "change": "+0.13"
     },
     {
       "label": "10 Year Treasury",
-      "value": "5.145",
-      "change": "+0.064"
+      "value": "5.112",
+      "change": "-0.023"
     }
   ]
 }
