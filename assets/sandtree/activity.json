@@ -1,21 +1,21 @@
 {
   "listing": "901 Sandtree Drive, Palm Beach Gardens",
-  "updated": "2026-10-19T17:23:00-04:00",
+  "updated": "2026-10-19T20:06:00-04:00",
   "sources": {
     "zillow": {
-      "views": 81,
+      "views": 93,
       "saves": 15,
-      "as_of": "2026-10-19T17:15:00-04:00",
+      "as_of": "2026-10-19T20:06:00-04:00",
       "url": "https://www.zillow.com/homedetails/901-Sandtree-Dr-Palm-Beach-Gardens-FL-33403/46866582_zpid/",
-      "method": "WebFetch of the listing URL returns '79 views / 15 saves' block; curl and headless Chrome get PerimeterX 403. Current values from Mike's phone screenshot 17:15 EDT."
+      "method": "WebFetch of the listing URL returns 'N views / M saves' block; curl and headless Chrome get PerimeterX 403."
     },
     "redfin": {
-      "views": 15,
+      "views": 18,
       "saves": 3,
-      "as_of": "2026-10-19T17:21:00-04:00",
+      "as_of": "2026-10-19T20:06:00-04:00",
       "label": "favorites",
       "url": "https://www.redfin.com/FL/Palm-Beach-Gardens/901-Sandtree-Dr-33403/home/42452854",
-      "method": "Headless Chrome (playwright, desktop Chrome UA); body text 'N views \u2022 M favorites'. Plain curl gets CloudFront 403."
+      "method": "Headless Chrome (playwright, desktop Chrome UA); body text 'N views • M favorites'. Plain curl gets CloudFront 403."
     },
     "homes_com": {
       "views": 15,
@@ -26,13 +26,20 @@
     }
   },
   "totals": {
-    "views": 111,
+    "views": 126,
     "saves_favorites": 18,
     "note": "Sum of non-null source values only. The page computes its own total from sources and adds site visits when > 0; this field is for reference."
   },
-  "social_audience": {"total": 681140, "display": "681K", "groups": 30, "updated": "2026-10-19T17:30-04:00", "source": "Facebook group member counts", "note": "Combined member counts of the 30 Facebook groups where Mike posted Sandtree; most counts are rounded by Facebook."},
+  "social_audience": {
+    "total": 681140,
+    "display": "681K",
+    "groups": 30,
+    "updated": "2026-10-19T17:30-04:00",
+    "source": "Facebook group member counts",
+    "note": "Combined member counts of the 30 Facebook groups where Mike posted Sandtree; most counts are rounded by Facebook."
+  },
   "site_counter_url": "https://abacus.jasoncameron.dev/get/mikemartoe-com/sandtree-page-views",
-  "site_visits_at_update": 0,
+  "site_visits_at_update": 6,
   "no_counts": {
     "realtor_com": {
       "url": "https://www.realtor.com/realestateandhomes-detail/M6956064380",
@@ -83,10 +90,23 @@
   },
   "note": null,
   "items": [
-    { "text": "Coming Soon" },
-    { "text": "Just listed Oct 18" },
-    { "text": "Broker Open Fri Oct 23, 9 AM to 9 PM by appt", "until": "2026-10-23T21:00:00-04:00" },
-    { "text": "Open Houses Sat Oct 24 and Sun Oct 25, 11 AM to 3 PM", "until": "2026-10-25T15:00:00-04:00" },
-    { "text": "Virtually staged photos: see it furnished", "href": "#furnished" }
+    {
+      "text": "Coming Soon"
+    },
+    {
+      "text": "Just listed Oct 18"
+    },
+    {
+      "text": "Broker Open Fri Oct 23, 9 AM to 9 PM by appt",
+      "until": "2026-10-23T21:00:00-04:00"
+    },
+    {
+      "text": "Open Houses Sat Oct 24 and Sun Oct 25, 11 AM to 3 PM",
+      "until": "2026-10-25T15:00:00-04:00"
+    },
+    {
+      "text": "Virtually staged photos: see it furnished",
+      "href": "#furnished"
+    }
   ]
 }
