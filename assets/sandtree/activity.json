@@ -1,18 +1,18 @@
 {
   "listing": "901 Sandtree Drive, Palm Beach Gardens",
-  "updated": "2026-10-22T11:03:00-04:00",
+  "updated": "2026-10-22T14:03:00-04:00",
   "sources": {
     "zillow": {
-      "views": 202,
+      "views": 212,
       "saves": 36,
-      "as_of": "2026-10-22T11:03:00-04:00",
+      "as_of": "2026-10-22T14:03:00-04:00",
       "url": "https://www.zillow.com/homedetails/901-Sandtree-Dr-Palm-Beach-Gardens-FL-33403/46866582_zpid/",
       "method": "WebFetch of the listing URL returns 'N views / M saves' block; curl and headless Chrome get PerimeterX 403."
     },
     "redfin": {
-      "views": 44,
+      "views": 45,
       "saves": 3,
-      "as_of": "2026-10-22T11:03:00-04:00",
+      "as_of": "2026-10-22T14:03:00-04:00",
       "label": "favorites",
       "url": "https://www.redfin.com/FL/Palm-Beach-Gardens/901-Sandtree-Dr-33403/home/42452854",
       "method": "Headless Chrome (playwright, desktop Chrome UA); body text 'N views \u2022 M favorites'. Plain curl gets CloudFront 403. If headless is blocked (CloudFront 403, as on Oct 21 2:09 PM, 5:10 PM and Oct 22 11:02 AM), the box browser loads it; the text sits below 'About this home' near 'Listed by'."
@@ -22,11 +22,12 @@
       "saves": null,
       "as_of": "2026-10-22T11:03:00-04:00",
       "url": "https://www.homes.com/property/901-sandtree-dr-palm-beach-gardens-fl/qmccl619jnpqv/",
-      "method": "WebFetch of the listing URL shows 'Total Views N' (no saves count shown). Headless Chrome gets Access Denied. Homesnap URL redirects here, so do not count Homesnap separately."
+      "method": "WebFetch of the listing URL shows 'Total Views N' (no saves count shown). Headless Chrome gets Access Denied. Homesnap URL redirects here, so do not count Homesnap separately.",
+      "check_note": "Oct 22 2:03 PM box browser showed 'Total Views 15' (was 128 at 11:03 AM via WebFetch, which timed out this run). Kept 128 until a second read confirms which counter is right."
     }
   },
   "totals": {
-    "views": 374,
+    "views": 385,
     "saves_favorites": 39,
     "note": "Sum of non-null source values only. The page computes its own total from sources and adds site visits when > 0; this field is for reference."
   },
