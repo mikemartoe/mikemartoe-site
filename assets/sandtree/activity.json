@@ -23,7 +23,7 @@
       "as_of": "2026-10-22T20:02:00-04:00",
       "url": "https://www.homes.com/property/901-sandtree-dr-palm-beach-gardens-fl/qmccl619jnpqv/",
       "method": "WebFetch of the listing URL shows 'Total Views N' (no saves count shown). Headless Chrome gets Access Denied. Homesnap URL redirects here, so do not count Homesnap separately.",
-      "check_note": "Oct 22 8:0x PM WebFetch showed 'Total Views 199'."
+      "check_note": "Oct 22 8:02 PM WebFetch showed 'Total Views 199'."
     }
   },
   "totals": {
