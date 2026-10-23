@@ -64,7 +64,7 @@ img{height:auto}
 .shead-split .shead-main{min-width:0;flex:1 1 auto}
 .shead-split .shead-main p{margin:0}
 .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
-.activity-ticker{flex:0 0 auto;width:clamp(280px,42%,430px);border:1px solid var(--red);border-radius:12px;background:#fff;padding:8px 14px 9px;line-height:1.35}
+.activity-ticker{flex:0 0 auto;width:clamp(280px,42%,430px);border:1px solid var(--red);border-radius:12px;background:#fff;padding:7px 12px 8px;line-height:1.3}
 .activity-ticker[hidden]{display:none}
 .at-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 0 3px}
 .at-label{margin:0;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
@@ -75,9 +75,9 @@ img{height:auto}
 .at-toggle:focus-visible{outline:2px solid var(--red);outline-offset:2px}
 .at-toggle .at-ic-play,.activity-ticker.is-paused .at-ic-pause{display:none}
 .activity-ticker.is-paused .at-ic-play{display:block}
-.at-stats{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:10px;margin:3px 0 6px;padding-bottom:7px;border-bottom:1px solid var(--line)}
+.at-stats{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:8px;margin:2px 0 4px;padding-bottom:5px;border-bottom:1px solid var(--line)}
 .at-stats[hidden]{display:none}
-.at-stat{display:grid;grid-template-columns:auto 1fr;grid-template-rows:auto auto;align-items:center;align-content:start;column-gap:5px;row-gap:3px;min-width:0}
+.at-stat{display:grid;grid-template-columns:auto 1fr;grid-template-rows:auto auto;align-items:center;align-content:start;column-gap:5px;row-gap:1px;min-width:0}
 .at-stat .at-ic{display:inline-flex;align-items:center;gap:1px;fill:var(--red)}
 .at-stat .at-ic svg{display:block}
 .at-stat strong{font-size:1.85rem;letter-spacing:-.01em;font-weight:800;line-height:1;color:var(--red);font-variant-numeric:tabular-nums;white-space:nowrap}
@@ -85,18 +85,18 @@ img{height:auto}
 .at-label .at-asof{margin-left:6px;text-transform:none;letter-spacing:0;font-size:.74rem;font-weight:500;color:var(--mut)}
 .at-window[hidden]{display:none}
 @media(max-width:480px){.at-stats{gap:8px}.at-stat{column-gap:4px}.at-stat strong{font-size:1.4rem}.at-stat .at-ic svg{width:19px;height:19px}.at-stat .at-cap{font-size:.72rem}}
-.at-cta{display:block;margin-top:6px;padding-top:6px;border-top:1px solid var(--line);font-size:.78rem;font-weight:600;line-height:1.35;color:var(--red);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.at-cta{display:block;margin-top:4px;padding-top:5px;border-top:1px solid var(--line);font-size:.78rem;font-weight:600;line-height:1.3;color:var(--red);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
 .at-cta:hover{text-decoration-thickness:2px}
 .at-cta:focus-visible{outline:2px solid var(--red);outline-offset:2px;border-radius:3px}
-.at-window{display:grid;overflow:hidden}
-.at-item{grid-area:1/1;align-self:center;font-size:.78rem;font-weight:500;color:var(--mut);opacity:0;transform:translateY(60%);transition:opacity .5s ease,transform .5s ease;visibility:hidden}
-.at-item.is-on{opacity:1;transform:none;visibility:visible}
+.at-window{display:grid;overflow:hidden;min-height:0;max-height:none}
+.at-item{grid-area:1/1;align-self:start;font-size:.78rem;font-weight:500;color:var(--mut);line-height:1.35;opacity:0;transform:translateY(6px);transition:opacity .5s ease,transform .5s ease;visibility:hidden;pointer-events:none}
+.at-item.is-on{opacity:1;transform:none;visibility:visible;pointer-events:auto}
 .at-item a{color:var(--mut);text-decoration:underline;text-decoration-color:var(--red);text-underline-offset:3px}
 .at-item a:hover{color:var(--red)}
 .at-item strong{color:var(--red);font-variant-numeric:tabular-nums}
 .at-asof{font-weight:500;color:var(--mut);font-size:.8rem}
 .activity-ticker.is-static .at-window{display:block}
-.activity-ticker.is-static .at-item{display:block;opacity:1;transform:none;visibility:visible;transition:none;font-size:.78rem;padding:1px 0}
+.activity-ticker.is-static .at-item{display:block;opacity:1;transform:none;visibility:visible;pointer-events:auto;transition:none;font-size:.78rem;padding:0;margin:0;line-height:1.35}
 @media(prefers-reduced-motion:reduce){.at-item{transition:none}}
 /* desktop: title block fills the Listing Activity box height (top + bottom edges) */
 .shead-specs .spec-price{color:var(--red);font-weight:700}
