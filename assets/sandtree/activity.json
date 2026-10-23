@@ -27,9 +27,15 @@
     }
   },
   "totals": {
-    "views": 316,
-    "saves_favorites": 10,
-    "note": "Sum of non-null source values only. The page computes its own total from sources and adds site visits when > 0; this field is for reference."
+    "views": 793,
+    "saves_favorites": 49,
+    "note": "Cumulative: Active sources + preLaunch. Page also adds live site visits when > 0. Never store Active-only here.",
+    "breakdown": {
+      "active_portals": 316,
+      "pre_launch_portals": 477,
+      "active_saves": 10,
+      "pre_launch_saves": 39
+    }
   },
   "social_audience": {
     "total": 681140,
@@ -89,13 +95,10 @@
       "result": "No public consumer portal with counts; agent-facing MLS stats require login (not checked)."
     }
   },
-  "note": null,
+  "note": "CUMULATIVE FOREVER: displayed Views/Saves = sources (Active) + preLaunch (Coming Soon baseline) + site visits. Refreshes may only overwrite sources.*; never wipe preLaunch or publish Active-only totals.",
   "items": [
     {
-      "text": "Coming Soon"
-    },
-    {
-      "text": "Just listed Oct 18"
+      "text": "Just listed"
     },
     {
       "text": "Broker Open Fri Oct 23, 9 AM to 9 PM by appt",
@@ -109,5 +112,23 @@
       "text": "Virtually staged photos: see it furnished",
       "href": "#furnished"
     }
-  ]
+  ],
+  "preLaunch": {
+    "as_of": "2026-10-22T20:02:00-04:00",
+    "status": "Coming Soon",
+    "note": "Frozen Coming Soon baseline (Oct 22, 8:02 PM ET). Portal counters reset on Active Oct 23. Permanent: refreshes ADD current sources on top of this block; never replace cumulative with portal-only.",
+    "zillow": {
+      "views": 231,
+      "saves": 36
+    },
+    "redfin": {
+      "views": 47,
+      "saves": 3,
+      "label": "favorites"
+    },
+    "homes_com": {
+      "views": 199,
+      "saves": null
+    }
+  }
 }
