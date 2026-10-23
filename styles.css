@@ -88,15 +88,15 @@ img{height:auto}
 .at-cta{display:block;margin-top:4px;padding-top:5px;border-top:1px solid var(--line);font-size:.78rem;font-weight:600;line-height:1.3;color:var(--red);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
 .at-cta:hover{text-decoration-thickness:2px}
 .at-cta:focus-visible{outline:2px solid var(--red);outline-offset:2px;border-radius:3px}
-.at-window{display:grid;overflow:hidden;min-height:0;max-height:none}
-.at-item{grid-area:1/1;align-self:start;font-size:.78rem;font-weight:500;color:var(--mut);line-height:1.35;opacity:0;transform:translateY(6px);transition:opacity .5s ease,transform .5s ease;visibility:hidden;pointer-events:none}
-.at-item.is-on{opacity:1;transform:none;visibility:visible;pointer-events:auto}
+.at-window{display:block;position:relative;overflow:hidden;min-height:0}
+.at-item{display:block;position:absolute;left:0;right:0;top:0;font-size:.78rem;font-weight:500;color:var(--mut);line-height:1.35;opacity:0;transform:translateY(6px);transition:opacity .5s ease,transform .5s ease;visibility:hidden;pointer-events:none}
+.at-item.is-on{position:relative;opacity:1;transform:none;visibility:visible;pointer-events:auto}
 .at-item a{color:var(--mut);text-decoration:underline;text-decoration-color:var(--red);text-underline-offset:3px}
 .at-item a:hover{color:var(--red)}
 .at-item strong{color:var(--red);font-variant-numeric:tabular-nums}
 .at-asof{font-weight:500;color:var(--mut);font-size:.8rem}
 .activity-ticker.is-static .at-window{display:block}
-.activity-ticker.is-static .at-item{display:block;opacity:1;transform:none;visibility:visible;pointer-events:auto;transition:none;font-size:.78rem;padding:0;margin:0;line-height:1.35}
+.activity-ticker.is-static .at-item{display:block;position:relative;opacity:1;transform:none;visibility:visible;pointer-events:auto;transition:none;font-size:.78rem;padding:0;margin:0 0 4px;line-height:1.35}
 @media(prefers-reduced-motion:reduce){.at-item{transition:none}}
 /* desktop: title block fills the Listing Activity box height (top + bottom edges) */
 .shead-specs .spec-price{color:var(--red);font-weight:700}
