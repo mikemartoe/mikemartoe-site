@@ -1,18 +1,18 @@
 {
   "listing": "901 Sandtree Drive, Palm Beach Gardens",
-  "updated": "2026-10-24T12:04:00-04:00",
+  "updated": "2026-10-24T13:03:00-04:00",
   "sources": {
     "zillow": {
-      "views": 158,
+      "views": 163,
       "saves": 21,
-      "as_of": "2026-10-24T12:04:00-04:00",
+      "as_of": "2026-10-24T13:03:00-04:00",
       "url": "https://www.zillow.com/homedetails/901-Sandtree-Dr-Palm-Beach-Gardens-FL-33403/46866582_zpid/",
       "method": "WebFetch of the listing URL returns 'N views / M saves' block; curl and headless Chrome get PerimeterX 403."
     },
     "redfin": {
-      "views": 79,
-      "saves": 3,
-      "as_of": "2026-10-24T12:04:00-04:00",
+      "views": 84,
+      "saves": 4,
+      "as_of": "2026-10-24T13:03:00-04:00",
       "label": "favorites",
       "url": "https://www.redfin.com/FL/Palm-Beach-Gardens/901-Sandtree-Dr-33403/home/42452854",
       "method": "Headless Chrome (playwright, desktop Chrome UA); body text 'N views \u2022 M favorites'. Plain curl gets CloudFront 403. If headless is blocked (CloudFront 403, as on Oct 21 2:09 PM, 5:10 PM and Oct 22 11:02 AM and 5:06 PM), the box browser loads it; the text sits below 'About this home' near 'Listed by'."
@@ -20,20 +20,20 @@
     "homes_com": {
       "views": 261,
       "saves": null,
-      "as_of": "2026-10-24T12:04:00-04:00",
+      "as_of": "2026-10-24T13:03:00-04:00",
       "url": "https://www.homes.com/property/901-sandtree-dr-palm-beach-gardens-fl/qmccl619jnpqv/",
       "method": "WebFetch of the listing URL shows 'Total Views N' (no saves count shown). Headless Chrome gets Access Denied. Homesnap URL redirects here, so do not count Homesnap separately.",
-      "check_note": "Oct 23 2:06 PM WebFetch showed 'Total Views 261' (MLS Status Active). Counts on all three portals reset when the listing went Active on Oct 23 (new listing record). Oct 23 6:05 PM WebFetch returned a stale cached 'Total Views 199' (the pre-launch figure); kept last real value 261. Oct 23 6:57 PM WebFetch timed out twice; kept last real value 261. Oct 23 8:08 PM WebFetch (second try) showed 'Total Views 261', MLS Status Active. Oct 24 8:08 AM WebFetch (second try) showed 'Total Views 261', MLS Status Active. Oct 24 9:02 AM WebFetch timed out twice; kept last real value 261. Oct 24 10:05 AM WebFetch showed 'Total Views 261', MLS Status Active. Oct 24 11:02 AM WebFetch timed out twice; kept last real value 261. Oct 24 12:04 PM WebFetch showed 'Total Views 261', MLS Status Active."
+      "check_note": "Oct 23 2:06 PM WebFetch showed 'Total Views 261' (MLS Status Active). Counts on all three portals reset when the listing went Active on Oct 23 (new listing record). Oct 23 6:05 PM WebFetch returned a stale cached 'Total Views 199' (the pre-launch figure); kept last real value 261. Oct 23 6:57 PM WebFetch timed out twice; kept last real value 261. Oct 23 8:08 PM WebFetch (second try) showed 'Total Views 261', MLS Status Active. Oct 24 8:08 AM WebFetch (second try) showed 'Total Views 261', MLS Status Active. Oct 24 9:02 AM WebFetch timed out twice; kept last real value 261. Oct 24 10:05 AM WebFetch showed 'Total Views 261', MLS Status Active. Oct 24 11:02 AM WebFetch timed out twice; kept last real value 261. Oct 24 12:04 PM WebFetch showed 'Total Views 261', MLS Status Active. Oct 24 1:03 PM WebFetch (second try) showed 'Total Views 261', MLS Status Active."
     }
   },
   "totals": {
-    "views": 975,
-    "saves_favorites": 63,
+    "views": 985,
+    "saves_favorites": 64,
     "note": "Cumulative: Active sources + preLaunch. Page also adds live site visits when > 0. Never store Active-only here.",
     "breakdown": {
-      "active_portals": 498,
+      "active_portals": 508,
       "pre_launch_portals": 477,
-      "active_saves": 24,
+      "active_saves": 25,
       "pre_launch_saves": 39
     }
   },
@@ -46,7 +46,7 @@
     "note": "Combined member counts of the 30 Facebook groups where Mike posted Sandtree; most counts are rounded by Facebook."
   },
   "site_counter_url": "https://abacus.jasoncameron.dev/get/mikemartoe-com/sandtree-page-views",
-  "site_visits_at_update": 54,
+  "site_visits_at_update": 56,
   "no_counts": {
     "realtor_com": {
       "url": "https://www.realtor.com/realestateandhomes-detail/M6956064380",
