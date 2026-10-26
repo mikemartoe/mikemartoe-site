@@ -1,18 +1,18 @@
 {
   "listing": "901 Sandtree Drive, Palm Beach Gardens",
-  "updated": "2026-10-26T19:00:00-04:00",
+  "updated": "2026-10-26T19:58:00-04:00",
   "sources": {
     "zillow": {
-      "views": 352,
+      "views": 355,
       "saves": 54,
-      "as_of": "2026-10-26T19:00:00-04:00",
+      "as_of": "2026-10-26T19:58:00-04:00",
       "url": "https://www.zillow.com/homedetails/901-Sandtree-Dr-Palm-Beach-Gardens-FL-33403/46866582_zpid/",
       "method": "WebFetch of the listing URL returns 'N views / M saves' block; curl and headless Chrome get PerimeterX 403."
     },
     "redfin": {
-      "views": 182,
+      "views": 184,
       "saves": 8,
-      "as_of": "2026-10-26T19:00:00-04:00",
+      "as_of": "2026-10-26T19:58:00-04:00",
       "label": "favorites",
       "url": "https://www.redfin.com/FL/Palm-Beach-Gardens/901-Sandtree-Dr-33403/home/42452854",
       "method": "Headless Chrome (playwright, desktop Chrome UA); body text 'N views \u2022 M favorites'. Plain curl gets CloudFront 403. If headless is blocked (CloudFront 403, as on Oct 21 2:09 PM, 5:10 PM and Oct 22 11:02 AM and 5:06 PM), the box browser loads it; the text sits below 'About this home' near 'Listed by'."
@@ -20,18 +20,18 @@
     "homes_com": {
       "views": 419,
       "saves": null,
-      "as_of": "2026-10-26T19:00:00-04:00",
+      "as_of": "2026-10-26T19:58:00-04:00",
       "url": "https://www.homes.com/property/901-sandtree-dr-palm-beach-gardens-fl/qmccl619jnpqv/",
       "method": "WebFetch of the listing URL shows 'Total Views N' (no saves count shown). Headless Chrome gets Access Denied. Homesnap URL redirects here, so do not count Homesnap separately.",
-      "check_note": "Oct 23 2:06 PM WebFetch showed 'Total Views 261' (MLS Status Active). Counts on all three portals reset when the listing went Active on Oct 23 (new listing record). Oct 23 6:05 PM WebFetch returned a stale cached 'Total Views 199' (the pre-launch figure); kept last real value 261. Oct 23 6:57 PM WebFetch timed out twice; kept last real value 261. Oct 23 8:08 PM WebFetch (second try) showed 'Total Views 261', MLS Status Active. Oct 24 8:08 AM WebFetch (second try) showed 'Total Views 261', MLS Status Active. Oct 24 9:02 AM WebFetch timed out twice; kept last real value 261. Oct 24 10:05 AM WebFetch showed 'Total Views 261', MLS Status Active. Oct 24 11:02 AM WebFetch timed out twice; kept last real value 261. Oct 24 12:04 PM WebFetch showed 'Total Views 261', MLS Status Active. Oct 24 1:03 PM WebFetch (second try) showed 'Total Views 261', MLS Status Active. Oct 24 2:01 PM WebFetch (second try) showed 'Total Views 261', MLS Status Active. Oct 24 3:00 PM WebFetch timed out twice; kept last real value 261. Oct 24 4:00 PM WebFetch showed 'Total Views 261', MLS Status Active. Oct 24 5:00 PM WebFetch showed 'Total Views 329', MLS Status Active. Oct 24 6:00 PM WebFetch timed out twice; kept last real value 329. Oct 24 7:05 PM WebFetch (second try) showed 'Total Views 329', MLS Status Active. Oct 24 8:03 PM WebFetch (second try) showed 'Total Views 329', MLS Status Active. Oct 25 8:08 AM WebFetch (second try) showed 'Total Views 329', MLS Status Active. Oct 25 9:05 AM WebFetch (second try) showed 'Total Views 329', MLS Status Active. Oct 25 10:01 AM WebFetch timed out twice; kept last real value 329. Oct 25 11:05 AM WebFetch showed 'Total Views 329', MLS Status Active. Oct 25 12:00 PM WebFetch showed 'Total Views 329', MLS Status Active. Oct 25 1:05 PM WebFetch showed 'Total Views 329', MLS Status Active. Oct 25 1:58 PM WebFetch showed 'Total Views 329', MLS Status Active. Oct 25 3:06 PM WebFetch showed 'Total Views 329', MLS Status Active. Oct 25 4:03 PM WebFetch timed out twice; kept last real value 329. Oct 25 5:00 PM WebFetch timed out twice; kept last real value 329. Oct 25 6:03 PM WebFetch showed 'Total Views 329', MLS Status Active. Oct 25 6:57 PM WebFetch showed 'Total Views 419', MLS Status Active. Oct 25 8:07 PM WebFetch (second try) showed 'Total Views 419', MLS Status Active. Oct 26 7:58 AM WebFetch (second try) showed 'Total Views 419', MLS Status Active. Oct 26 9:00 AM WebFetch (second try) showed 'Total Views 419', MLS Status Active. Oct 26 10:00 AM WebFetch showed 'Total Views 419', MLS Status Active. Oct 26 11:00 AM WebFetch showed 'Total Views 419', MLS Status Active. Oct 26 12:05 PM WebFetch showed 'Total Views 419', MLS Status Active. Oct 26 1:10 PM WebFetch timed out twice; kept last real value 419. Oct 26 2:00 PM WebFetch showed 'Total Views 419', MLS Status Active. Oct 26 3:00 PM WebFetch showed 'Total Views 419', MLS Status Active. Oct 26 3:57 PM WebFetch (second try) showed 'Total Views 419', MLS Status Active. Oct 26 4:59 PM WebFetch showed 'Total Views 419', MLS Status Active. Oct 26 5:59 PM WebFetch (second try) showed 'Total Views 419', MLS Status Active. Oct 26 7:00 PM WebFetch showed 'Total Views 419', MLS Status Active."
+      "check_note": "Oct 23 2:06 PM WebFetch showed 'Total Views 261' (MLS Status Active). Counts on all three portals reset when the listing went Active on Oct 23 (new listing record). Oct 23 6:05 PM WebFetch returned a stale cached 'Total Views 199' (the pre-launch figure); kept last real value 261. Oct 23 6:57 PM WebFetch timed out twice; kept last real value 261. Oct 23 8:08 PM WebFetch (second try) showed 'Total Views 261', MLS Status Active. Oct 24 8:08 AM WebFetch (second try) showed 'Total Views 261', MLS Status Active. Oct 24 9:02 AM WebFetch timed out twice; kept last real value 261. Oct 24 10:05 AM WebFetch showed 'Total Views 261', MLS Status Active. Oct 24 11:02 AM WebFetch timed out twice; kept last real value 261. Oct 24 12:04 PM WebFetch showed 'Total Views 261', MLS Status Active. Oct 24 1:03 PM WebFetch (second try) showed 'Total Views 261', MLS Status Active. Oct 24 2:01 PM WebFetch (second try) showed 'Total Views 261', MLS Status Active. Oct 24 3:00 PM WebFetch timed out twice; kept last real value 261. Oct 24 4:00 PM WebFetch showed 'Total Views 261', MLS Status Active. Oct 24 5:00 PM WebFetch showed 'Total Views 329', MLS Status Active. Oct 24 6:00 PM WebFetch timed out twice; kept last real value 329. Oct 24 7:05 PM WebFetch (second try) showed 'Total Views 329', MLS Status Active. Oct 24 8:03 PM WebFetch (second try) showed 'Total Views 329', MLS Status Active. Oct 25 8:08 AM WebFetch (second try) showed 'Total Views 329', MLS Status Active. Oct 25 9:05 AM WebFetch (second try) showed 'Total Views 329', MLS Status Active. Oct 25 10:01 AM WebFetch timed out twice; kept last real value 329. Oct 25 11:05 AM WebFetch showed 'Total Views 329', MLS Status Active. Oct 25 12:00 PM WebFetch showed 'Total Views 329', MLS Status Active. Oct 25 1:05 PM WebFetch showed 'Total Views 329', MLS Status Active. Oct 25 1:58 PM WebFetch showed 'Total Views 329', MLS Status Active. Oct 25 3:06 PM WebFetch showed 'Total Views 329', MLS Status Active. Oct 25 4:03 PM WebFetch timed out twice; kept last real value 329. Oct 25 5:00 PM WebFetch timed out twice; kept last real value 329. Oct 25 6:03 PM WebFetch showed 'Total Views 329', MLS Status Active. Oct 25 6:57 PM WebFetch showed 'Total Views 419', MLS Status Active. Oct 25 8:07 PM WebFetch (second try) showed 'Total Views 419', MLS Status Active. Oct 26 7:58 AM WebFetch (second try) showed 'Total Views 419', MLS Status Active. Oct 26 9:00 AM WebFetch (second try) showed 'Total Views 419', MLS Status Active. Oct 26 10:00 AM WebFetch showed 'Total Views 419', MLS Status Active. Oct 26 11:00 AM WebFetch showed 'Total Views 419', MLS Status Active. Oct 26 12:05 PM WebFetch showed 'Total Views 419', MLS Status Active. Oct 26 1:10 PM WebFetch timed out twice; kept last real value 419. Oct 26 2:00 PM WebFetch showed 'Total Views 419', MLS Status Active. Oct 26 3:00 PM WebFetch showed 'Total Views 419', MLS Status Active. Oct 26 3:57 PM WebFetch (second try) showed 'Total Views 419', MLS Status Active. Oct 26 4:59 PM WebFetch showed 'Total Views 419', MLS Status Active. Oct 26 5:59 PM WebFetch (second try) showed 'Total Views 419', MLS Status Active. Oct 26 7:00 PM WebFetch showed 'Total Views 419', MLS Status Active. Oct 26 7:58 PM WebFetch showed 'Total Views 419', MLS Status Active."
     }
   },
   "totals": {
-    "views": 1430,
+    "views": 1435,
     "saves_favorites": 101,
     "note": "Cumulative: Active sources + preLaunch. Page also adds live site visits when > 0. Never store Active-only here.",
     "breakdown": {
-      "active_portals": 953,
+      "active_portals": 958,
       "pre_launch_portals": 477,
       "active_saves": 62,
       "pre_launch_saves": 39
