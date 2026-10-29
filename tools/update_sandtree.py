@@ -33,20 +33,23 @@ def browser(url, wait_text):
 
 def reader(url):
     # free public reader proxy (r.jina.ai), same idea as the WebFetch the old routine used; last resort
-    return curl('https://r.jina.ai/' + url)
+    return curl('https://r.jina.ai/' + url)  # anonymous use is rate-limited; blocked from some networks
+
+def diag(t):
+    print('  attempt: %d chars: %s' % (len(t), re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', t))[:120]))
 
 def num(s): return int(s.replace(',', ''))
 
 def redfin(url):
     for get in (lambda: curl(url), lambda: browser(url, 'favorites'), lambda: reader(url)):
-        t = get()
+        t = get(); diag(t)
         m = re.search(r'([\d,]+)\s*views?\s*[•·\u2022|]?\s*([\d,]+)\s*favorites?', t, re.I)
         if m: return num(m.group(1)), num(m.group(2))
     return None
 
 def homes(url):
     for get in (lambda: curl(url), lambda: browser(url, 'total views'), lambda: reader(url)):
-        t = get()
+        t = get(); diag(t)
         m = re.search(r'Total\s+Views\W*(?:<[^>]*>\W*)*([\d,]+)', t, re.I)
         if m: return num(m.group(1)), None
     return None
