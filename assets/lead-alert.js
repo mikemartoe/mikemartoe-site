@@ -4,14 +4,19 @@
    The normal FormSubmit submission always continues; ntfy errors are ignored.
    Uses ntfy JSON publishing (POST to the server root, JSON in a text/plain body) so it stays a
    simple CORS request (no preflight) and can carry action buttons:
-   - Showing Request alerts: "Approve and Book" (mailto: Mike with an exact, parseable subject) + "Call".
-   - Other leads with a phone number: "Call".
-   Approval email subject (exact format, parsed by the scheduled checker):
-     APPROVE SHOWING - 901 Sandtree - <name> - <YYYY-MM-DD> <time window> */
+   - Showing Request alerts: "Approve and Book" + "Call".
+     "Approve and Book" opens a prefilled Google Calendar event (no bot or routine needed):
+     title "Showing: 901 Sandtree - <name>", the requested date at the start of the requested
+     window (30 min, America/New_York), the listing address as location, the lead details, and the
+     requester's email pre-added as a guest. Mike taps Save, and Google offers to email the invite,
+     which books and confirms the showing in one step.
+   - Other leads with a phone number: "Call". */
 (function(){
   var TOPIC='mikemartoe-leads-neecosgi';
   var SERVER='https://ntfy-me.com/';
-  var APPROVE_TO='mikemartoe@gmail.com';
+  var LISTING_ADDR='901 Sandtree Drive, Palm Beach Gardens, FL 33403';
+  /* start hour of each time window; Flexible defaults to 10 AM */
+  var WINDOW_START={'Morning':9,'Midday':12,'Afternoon':15,'Evening':18,'Flexible':10};
   var TITLES={
     'showing-request':'Showing Request - 901 Sandtree',
     'showing':'Open House RSVP / Info - 901 Sandtree',
@@ -55,23 +60,36 @@
     if(d.length===11&&d.charAt(0)==='1') return 'tel:+'+d;
     return d.length>=7?'tel:'+d:'';
   }
-  function approveSubject(f){
-    var name=val(f,'name').replace(/\s+-+\s+/g,' ')||'Unknown';
-    return 'APPROVE SHOWING - 901 Sandtree - '+name+' - '+val(f,'preferred_date')+' '+val(f,'preferred_time');
+  function pad(n){ return (n<10?'0':'')+n; }
+  function approveDates(f){
+    var d=val(f,'preferred_date').match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    if(!d) return '';
+    var w=val(f,'preferred_time').split(' ')[0], h=WINDOW_START.hasOwnProperty(w)?WINDOW_START[w]:10;
+    var day=d[1]+d[2]+d[3];
+    return day+'T'+pad(h)+'0000/'+day+'T'+pad(h)+'3000';
   }
-  function approveBody(f){
-    return ['Approve this showing request and book it in ShowingTime:','',
+  function approveDetails(f){
+    return ['Showing request from mikemartoe.com (approved).','',
       'Name: '+val(f,'name'),'Phone: '+val(f,'phone'),'Email: '+val(f,'email'),
-      'Date: '+val(f,'preferred_date'),'Time: '+val(f,'preferred_time'),
+      'Requested: '+val(f,'preferred_date')+' '+val(f,'preferred_time'),
       'Working with an agent: '+val(f,'working_with_agent')+(val(f,'agent_name')?' ('+val(f,'agent_name')+')':''),
-      'Note: '+val(f,'note'),
-      'Listing: 901 Sandtree Drive, Palm Beach Gardens, FL 33403 (MLS B26089813)'].join('\n');
+      'Note: '+val(f,'note'),'',
+      'Listing: '+LISTING_ADDR+' (MLS B26089813)'].join('\n');
+  }
+  function approveUrl(f){
+    var q=['action=TEMPLATE',
+      'text='+encodeURIComponent('Showing: 901 Sandtree - '+(val(f,'name')||'Buyer')),
+      'details='+encodeURIComponent(approveDetails(f)),
+      'location='+encodeURIComponent(LISTING_ADDR),
+      'ctz=America/New_York'];
+    var dt=approveDates(f); if(dt) q.push('dates='+dt);
+    var em=val(f,'email'); if(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)) q.push('add='+encodeURIComponent(em));
+    return 'https://calendar.google.com/calendar/render?'+q.join('&');
   }
   function actionsFor(f){
     var a=[], isShowing=f.id==='showing-request'&&location.pathname.indexOf('listings')!==-1;
     if(isShowing){
-      a.push({action:'view',label:'Approve and Book',clear:true,
-        url:'mailto:'+APPROVE_TO+'?subject='+encodeURIComponent(approveSubject(f))+'&body='+encodeURIComponent(approveBody(f))});
+      a.push({action:'view',label:'Approve and Book',clear:true,url:approveUrl(f)});
     }
     var t=telFor(val(f,'phone'));
     if(t) a.push({action:'view',label:'Call',url:t});
