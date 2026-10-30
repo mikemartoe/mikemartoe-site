@@ -500,3 +500,7 @@ img{height:auto}
 .gallery .gitem.vs-item.is-active::after,.gallery .gitem.vs-item[aria-pressed="true"]::after{border-color:var(--red)}
 .gallery .gitem.vs-item.is-active img{transform:none}
 @media(max-width:600px){.ba{scroll-margin-top:89px}}
+
+/* Resource for Closers nav link: keep header on one row on laptops */
+@media(min-width:961px) and (max-width:1240px){nav a{padding:8px 7px;font-size:.88rem;white-space:nowrap}nav .btn.sm{margin-left:4px;padding:8px 12px}}
+@media(min-width:961px) and (max-width:1060px){nav{gap:0}nav a{padding:8px 5px;font-size:.82rem}nav .btn.sm{margin-left:2px;padding:7px 9px}}
