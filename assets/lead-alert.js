@@ -19,7 +19,7 @@
   var WINDOW_START={'Morning':9,'Midday':12,'Afternoon':15,'Evening':18,'Flexible':10};
   var TITLES={
     'showing-request':'Showing Request - 901 Sandtree',
-    'showing':'Open House RSVP / Info - 901 Sandtree',
+    'showing':'Info Request - 901 Sandtree',
     'seller-valuation':'Seller Lead - Home Value Report (Sandtree page)',
     'buyer-relocation':'Buyer Lead - Relocation (Sandtree page)'
   };
