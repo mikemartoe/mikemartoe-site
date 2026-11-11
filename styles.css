@@ -369,15 +369,7 @@ img{height:auto}
 }
 .cf-hint{display:block;margin-top:6px;font-size:.74rem;font-weight:500;color:var(--mut)}
 
-/* broker open line */
-.oh-banner + .bo-banner{margin-top:-8px}
-.bo-banner{background:var(--ink);color:#fff;border-left:4px solid var(--red);border-radius:10px;padding:9px 16px;margin:0 0 16px;font-size:.9rem;line-height:1.45}
-.bo-banner strong{color:#fff}
-.bo-banner a{color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:2px;white-space:nowrap}
-.bo-banner a:hover{color:#ffb3b3}
-.ft-badge-dark{background:var(--ink)}
 .ft-d a{color:var(--red);font-weight:600}
-@media(max-width:600px){.bo-banner{font-size:.85rem;padding:9px 12px}}
 
 /* about card full width */
 @media(min-width:961px){
@@ -388,8 +380,6 @@ img{height:auto}
 
 .about-text{font-family:'Lora',Georgia,'Times New Roman',serif;font-size:18px;line-height:1.7;color:#3a2f2a}
 @media(max-width:600px){.about-text{font-size:17px}}
-.oh-banner ~ .bo-banner{margin-bottom:18px}
-
 /* more space below About card */
 .fc-about{margin:0 0 48px}
 @media(max-width:600px){.fc-about{margin:0 0 32px}}
@@ -485,15 +475,9 @@ img{height:auto}
 .showreq-agent input{width:auto;margin:0;accent-color:var(--red)}
 .showreq-panel .btn{width:100%;text-align:center}
 @media(max-width:600px){.showreq-agent legend{float:none;width:100%;margin:0 0 2px}.showreq-panel{padding:16px 14px 18px}.showreq-panel .row.two{grid-template-columns:1fr}.showreq-bar{gap:8px 14px}}
-/* sandtree: flush-left event bars (shared text inset), balanced gaps (hero->bars = bars->title) */
-#sandtree .oh-banner,#sandtree .bo-banner{text-align:left}
+/* sandtree listing section spacing */
 #sandtree.sec{padding-top:28px}
-#sandtree .oh-banner ~ .bo-banner{margin-bottom:28px}
-@media(max-width:600px){#sandtree.sec{padding-top:24px}#sandtree .oh-banner ~ .bo-banner{margin-bottom:24px}}
-#sandtree > .bo-banner:first-child{margin-bottom:28px}
-@media(max-width:600px){#sandtree > .bo-banner:first-child{margin-bottom:24px}}
-#sandtree .bo-banner{padding-left:16px;padding-right:16px}
-@media(max-width:600px){#sandtree .bo-banner{padding-left:10px;padding-right:12px}}
+@media(max-width:600px){#sandtree.sec{padding-top:24px}}
 @media(max-width:600px){#sandtree .shead-split{margin-bottom:24px}}
 /* sandtree: staged thumbnails load into the before/after slider in place */
 .ba{scroll-margin-top:90px}
