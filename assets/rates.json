@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16",
+  "updated": "2026-11-17",
   "note": null,
   "source": "Mortgage News Daily",
   "source_url": "https://www.mortgagenewsdaily.com/mortgage-rates",
@@ -16,13 +16,13 @@
     },
     {
       "label": "UMBS 30YR 6.0",
-      "value": "98.71",
-      "change": "+0.01"
+      "value": "98.72",
+      "change": "+0.02"
     },
     {
       "label": "10 Year Treasury",
-      "value": "5.130",
-      "change": "-0.005"
+      "value": "5.127",
+      "change": "-0.007"
     }
   ]
 }
