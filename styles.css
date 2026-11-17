@@ -18,7 +18,7 @@ h1,h2,h3{line-height:1.2;margin:.2em 0 .5em}h1{font-size:clamp(2rem,4.4vw,3.4rem
 .listing{display:grid;grid-template-columns:1.1fr 1fr;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:0 10px 30px #0000000f}
 .lphoto{position:relative;min-height:300px;background:repeating-linear-gradient(45deg,#f3eded,#f3eded 14px,#f8f3f3 14px,#f8f3f3 28px);display:grid;place-items:center}.lphoto.big{min-height:380px;border-radius:var(--r)}
 .phtxt{text-align:center;color:var(--mut);font-weight:600;font-size:1.05rem}.badge{position:absolute;top:16px;left:16px;background:var(--red);color:#fff;font-weight:700;padding:6px 14px;border-radius:999px;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase}
-.lbody{padding:30px}.price{font-size:2rem;font-weight:800;color:var(--red);margin:0}.muted{color:var(--mut)}.small{font-size:.85rem}
+.lbody{padding:30px}.price{font-size:2rem;font-weight:800;color:var(--red);margin:0}.price-was{color:var(--mut);font-weight:600;font-size:.62em;text-decoration:line-through;margin-right:.4em;letter-spacing:0}.muted{color:var(--mut)}.small{font-size:.85rem}
 .facts{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}.facts li{background:var(--soft);padding:8px 14px;border-radius:10px;font-size:.92rem}
 .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}.tile{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px;text-decoration:none;color:inherit;transition:.2s}a.tile:hover{transform:translateY(-4px);box-shadow:0 14px 30px #0000001a;border-color:var(--red)}.tile b{color:var(--red)}.ic{font-size:1.8rem}
 .chips{display:flex;flex-wrap:wrap;gap:12px}.chips a{border:2px solid var(--red);padding:10px 20px;border-radius:999px;text-decoration:none;font-weight:600}.chips a:hover{background:var(--red);color:#fff}
@@ -100,6 +100,7 @@ img{height:auto}
 @media(prefers-reduced-motion:reduce){.at-item{transition:none}}
 /* desktop: title block fills the Listing Activity box height (top + bottom edges) */
 .shead-specs .spec-price{color:var(--red);font-weight:700}
+.shead-specs .price-was{color:var(--mut);font-weight:600;text-decoration:line-through;margin-right:.25em}
 @media(min-width:701px){
   .shead-split{align-items:stretch}
   .shead-split .shead-main{container-type:inline-size;display:flex;flex-direction:column;justify-content:space-between;gap:6px}
@@ -156,6 +157,16 @@ img{height:auto}
               }
 
 .oh-mini{margin:10px 0;color:var(--red);font-size:.95rem}
+
+/* broker open line */
+.oh-banner + .bo-banner{margin-top:-8px}
+.bo-banner{background:var(--ink);color:#fff;border-left:4px solid var(--red);border-radius:10px;padding:9px 16px;margin:0 0 16px;font-size:.9rem;line-height:1.45}
+.bo-banner strong{color:#fff}
+.bo-banner a{color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:2px;white-space:nowrap}
+.bo-banner a:hover{color:#ffb3b3}
+.ft-badge-dark{background:var(--ink)}
+@media(max-width:600px){.bo-banner{font-size:.85rem;padding:9px 12px}}
+.oh-banner ~ .bo-banner{margin-bottom:18px}
 
 /* sandtree column stretch */
 .detail-top{display:grid;grid-template-columns:1.3fr 1fr;gap:36px;align-items:stretch}
@@ -475,9 +486,15 @@ img{height:auto}
 .showreq-agent input{width:auto;margin:0;accent-color:var(--red)}
 .showreq-panel .btn{width:100%;text-align:center}
 @media(max-width:600px){.showreq-agent legend{float:none;width:100%;margin:0 0 2px}.showreq-panel{padding:16px 14px 18px}.showreq-panel .row.two{grid-template-columns:1fr}.showreq-bar{gap:8px 14px}}
-/* sandtree listing section spacing */
+/* sandtree: flush-left event bars (shared text inset), balanced gaps (hero->bars = bars->title) */
+#sandtree .oh-banner,#sandtree .bo-banner{text-align:left}
 #sandtree.sec{padding-top:28px}
-@media(max-width:600px){#sandtree.sec{padding-top:24px}}
+#sandtree .oh-banner ~ .bo-banner{margin-bottom:28px}
+@media(max-width:600px){#sandtree.sec{padding-top:24px}#sandtree .oh-banner ~ .bo-banner{margin-bottom:24px}}
+#sandtree > .bo-banner:first-child{margin-bottom:28px}
+@media(max-width:600px){#sandtree > .bo-banner:first-child{margin-bottom:24px}}
+#sandtree .bo-banner{padding-left:16px;padding-right:16px}
+@media(max-width:600px){#sandtree .bo-banner{padding-left:10px;padding-right:12px}}
 @media(max-width:600px){#sandtree .shead-split{margin-bottom:24px}}
 /* sandtree: staged thumbnails load into the before/after slider in place */
 .ba{scroll-margin-top:90px}
