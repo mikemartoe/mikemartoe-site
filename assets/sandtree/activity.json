@@ -1,6 +1,6 @@
 {
   "listing": "901 Sandtree Drive, Palm Beach Gardens",
-  "updated": "2026-11-20T00:22:00-05:00",
+  "updated": "2026-11-20T14:22:00-05:00",
   "sources": {
     "zillow": {
       "views": 1286,
@@ -8,12 +8,12 @@
       "as_of": "2026-11-20T00:22:00-05:00",
       "url": "https://www.zillow.com/homedetails/901-Sandtree-Dr-Palm-Beach-Gardens-FL-33403/46866582_zpid/",
       "method": "WebFetch of the listing URL returns 'N views / M saves' block; curl and headless Chrome get PerimeterX 403.",
-      "note": "Nov 20 12:22 AM ET WebFetch showed 1,286 views / 182 saves, For sale $339,900, 28 days on Zillow."
+      "note": "Zillow blocks automated fetches (PerimeterX 403); number kept from the last manual check on 2026-11-20."
     },
     "redfin": {
-      "views": 499,
+      "views": 508,
       "saves": 18,
-      "as_of": "2026-11-20T00:22:00-05:00",
+      "as_of": "2026-11-20T14:22:00-05:00",
       "label": "favorites",
       "url": "https://www.redfin.com/FL/Palm-Beach-Gardens/901-Sandtree-Dr-33403/home/42452854",
       "method": "Headless Chrome (playwright, desktop Chrome UA); body text 'N views \u2022 M favorites'. Plain curl gets CloudFront 403. If headless is blocked (CloudFront 403, as on Oct 21 2:09 PM, 5:10 PM and Oct 22 11:02 AM and 5:06 PM), the box browser loads it; the text sits below 'About this home' near 'Listed by'.",
@@ -29,11 +29,11 @@
     }
   },
   "totals": {
-    "views": 3411,
+    "views": 3420,
     "saves_favorites": 239,
     "note": "Cumulative: Active sources + preLaunch. Page also adds live site visits when > 0. Never store Active-only here.",
     "breakdown": {
-      "active_portals": 2934,
+      "active_portals": 2943,
       "pre_launch_portals": 477,
       "active_saves": 200,
       "pre_launch_saves": 39
