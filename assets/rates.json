@@ -6,23 +6,23 @@
   "items": [
     {
       "label": "30YR Fixed",
-      "value": "7.34%",
-      "change": "+0.01%"
+      "value": "7.32%",
+      "change": "-0.02%"
     },
     {
       "label": "15YR Fixed",
-      "value": "6.89%",
-      "change": "+0.00%"
+      "value": "6.87%",
+      "change": "-0.02%"
     },
     {
       "label": "UMBS 30YR 6.0",
-      "value": "99.57",
-      "change": "+0.02"
+      "value": "99.73",
+      "change": "+0.14"
     },
     {
       "label": "10 Year Treasury",
-      "value": "4.927",
-      "change": "-0.020"
+      "value": "4.902",
+      "change": "-0.025"
     }
   ]
 }
